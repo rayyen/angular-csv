@@ -45,7 +45,7 @@ export const ConfigDefaults: Options = {
     nullToEmptyString: CsvConfigConsts.DEFAULT_NULL_TO_EMPTY_STRING
 };
 
-export class Angular5Csv {
+export class AngularCsv {
 
     public fileName: string;
     public labels: Array<String>;
@@ -147,11 +147,11 @@ export class Angular5Csv {
      */
     formatData(data: any) {
 
-        if (this._options.decimalseparator === 'locale' && Angular5Csv.isFloat(data)) {
+        if (this._options.decimalseparator === 'locale' && AngularCsv.isFloat(data)) {
             return data.toLocaleString();
         }
 
-        if (this._options.decimalseparator !== '.' && Angular5Csv.isFloat(data)) {
+        if (this._options.decimalseparator !== '.' && AngularCsv.isFloat(data)) {
             return data.toString().replace('.', this._options.decimalseparator);
         }
 

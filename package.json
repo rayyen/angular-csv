@@ -1,21 +1,20 @@
 {
-  "name": "angular5-csv",
-  "version": "0.2.10",
-  "description": "Helper library for create CSV file in Angular 5",
+  "name": "angular-csv-ext",
+  "version": "1.0.0",
+  "description": "Helper library for create CSV file in Angular",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alhazmy13/angular5-csv.git"
+    "url": "https://github.com/alhazmy13/angular-csv-ext.git"
   },
   "scripts": {
     "dev": "tsc --watch",
     "test-watch": "karma start",
     "test": "karma start --single-run",
-    "run": "ts-node ./Angular5Csv.ts",
+    "run": "ts-node ./AngularCsv.ts",
     "prepublishOnly": "tsc -p ./ --outDir dist/"
   },
   "keywords": [
-    "angular5",
-    "angular-5",
+    "angular",
     "export-to-csv",
     "export-to-excel",
     "csv",
@@ -33,11 +32,11 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alhazmy13/angular5-csv/issues"
+    "url": "https://github.com/alhazmy13/angular-csv-ext/issues"
   },
-  "main": "./dist/Angular2-csv.js",
-  "typings": "/dist/Angular2-csv.d.ts",
-  "homepage": "https://github.com/alhazmy13/angular5-csv#readme",
+  "main": "./dist/Angular-csv.js",
+  "typings": "/dist/Angular-csv.d.ts",
+  "homepage": "https://github.com/alhazmy13/angular-csv-ext#readme",
   "devDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",
@@ -49,14 +48,14 @@
     "core-js": "^2.3.0",
     "es6-shim": "^0.35.3",
     "jasmine-core": "^2.99.1",
-    "karma": "^1.7.1",
+    "karma": "^4.2.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.1",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
-    "karma-typescript": "^3.0.12",
-    "karma-webpack": "^2.0.3",
+    "karma-typescript": "^4.1.1",
+    "karma-webpack": "^4.0.2",
     "phantomjs-prebuilt": "^2.1.7",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.0.0",

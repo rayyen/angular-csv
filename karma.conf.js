@@ -2,8 +2,8 @@ var configuration = {
     frameworks: ["jasmine", "karma-typescript"],
 
     files: [
-        'Angular5-csv.spec.ts',
-        'Angular5-csv.ts'
+        'Angular-csv.spec.ts',
+        'Angular-csv.ts'
     ],
 
     preprocessors: {
