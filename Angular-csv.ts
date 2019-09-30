@@ -103,6 +103,7 @@ export class AngularCsv {
 
             link.href = URL.createObjectURL(blob);
 
+            link.setAttribute('target', '_blank');
             link.setAttribute('visibility', 'hidden');
             link.download = this._options.filename.replace(/ /g, "_") + ".csv";
 
