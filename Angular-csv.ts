@@ -177,6 +177,10 @@ export class AngularCsv {
         return data;
     }
 
+    getCsvData() {
+        return this.csv;
+    }
+
     /**
      * Check if is Float
      * @param {any} input
