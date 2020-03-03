@@ -26,6 +26,7 @@ export class CsvConfigConsts {
     public static DEFAULT_SHOW_LABELS = false;
     public static DEFAULT_USE_BOM = true;
     public static DEFAULT_HEADER: any[] = [];
+    public static DEFAULT_USE_HEADER = false;
     public static DEFAULT_NO_DOWNLOAD = false;
     public static DEFAULT_NULL_TO_EMPTY_STRING = false;
 
@@ -41,6 +42,7 @@ export const ConfigDefaults: Options = {
     title: CsvConfigConsts.DEFAULT_TITLE,
     useBom: CsvConfigConsts.DEFAULT_USE_BOM,
     headers: CsvConfigConsts.DEFAULT_HEADER,
+    useHeader: CsvConfigConsts.DEFAULT_USE_HEADER,
     noDownload: CsvConfigConsts.DEFAULT_NO_DOWNLOAD,
     nullToEmptyString: CsvConfigConsts.DEFAULT_NULL_TO_EMPTY_STRING
 };
@@ -133,10 +135,15 @@ export class AngularCsv {
     getBody() {
         for (let i = 0; i < this.data.length; i++) {
             let row = "";
-            for (const index in this.data[i]) {
-                row += this.formatData(this.data[i][index]) + this._options.fieldSeparator;
+            if (this._options.useHeader && this._options.headers.length > 0) {
+               for (const index of this._options.headers) {
+                   row += this.formatData(this.data[i][index]) + this._options.fieldSeparator;
+               }
+            } else {
+               for (const index in this.data[i]) {
+                   row += this.formatData(this.data[i][index]) + this._options.fieldSeparator;
+               }
             }
-
             row = row.slice(0, -1);
             this.csv += row + CsvConfigConsts.EOL;
         }
