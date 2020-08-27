@@ -28,6 +28,10 @@
     {
       "name": "Davor Peic - Krushka Design",
       "email": "info@krushka.mx"
+    },
+    {
+      "name":"rob-moore",
+      "account":"https://github.com/rob-moore"
     }
   ],
   "license": "MIT",
