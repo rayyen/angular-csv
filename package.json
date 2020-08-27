@@ -1,6 +1,6 @@
 {
   "name": "angular-csv-ext",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Helper library for create CSV file in Angular",
   "repository": {
     "type": "git",
@@ -28,6 +28,10 @@
     {
       "name": "Davor Peic - Krushka Design",
       "email": "info@krushka.mx"
+    },
+    {
+      "name": "rob-moore",
+      "account": "https://github.com/rob-moore"
     }
   ],
   "license": "MIT",

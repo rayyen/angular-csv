@@ -9,6 +9,7 @@ export interface Options {
     useBom: boolean;
     headers: string[];
     noDownload: boolean;
+    useHeader: boolean;
     nullToEmptyString: boolean;
 }
 

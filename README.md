@@ -92,7 +92,5 @@ new AngularCsv(data, 'My Report');
 ## Credits
 
 
-
  * [sn123](https://github.com/sn123)
  * [arf1980](https://github.com/arf1980)
- * [rob-moore](https://github.com/rob-moore)
