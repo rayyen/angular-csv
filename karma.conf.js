@@ -12,12 +12,12 @@ var configuration = {
 
     reporters: ["progress", "karma-typescript"],
     customLaunchers: {
-        Chrome_travis_ci: {
-            base: 'Chrome',
+        ChromeHeadlessNoSandbox: {
+            base: 'ChromeHeadless',
             flags: ['--no-sandbox']
         }
     },
-    browsers: ["Chrome"]
+    browsers: ['Chrome', 'ChromeHeadless', 'ChromeHeadlessNoSandbox']
 };
 
 if (process.env.TRAVIS) {

@@ -1,6 +1,6 @@
 {
   "name": "angular-csv-ext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper library for create CSV file in Angular",
   "repository": {
     "type": "git",
@@ -37,6 +37,9 @@
   "main": "./dist/Angular-csv.js",
   "typings": "/dist/Angular-csv.d.ts",
   "homepage": "https://github.com/alhazmy13/angular-csv-ext#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",
